@@ -1,9 +1,11 @@
 import React from 'react';
 
-const BurgerIngredient = () => {
+interface Props{
+    name:string
+}
+const BurgerIngredient:React.FC<Props> = ({name}) => {
     return (
-        <div>
-            
+        <div className={name}>
         </div>
     );
 };

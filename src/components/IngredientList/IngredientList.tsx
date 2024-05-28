@@ -1,8 +1,10 @@
 import React from 'react';
 
-const IngredientList = () => {
+interface Props{
+}
+const IngredientList:React.FC<Props> = () => {
     return (
-        <div>
+        <div className={'ingredients-list'}>
             
         </div>
     );
