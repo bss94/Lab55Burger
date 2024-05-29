@@ -17,8 +17,28 @@ const App = () => {
         {name: 'Bacon', count: 0},
     ]);
 
-
-
+    const onIngredientClick = (position: number) => {
+        setIngredients(prevState => {
+            return prevState.map((el, index) => {
+                if (position === index) {
+                    return {...el, count: el.count + 1};
+                } else {
+                    return {...el};
+                }
+            });
+        });
+    };
+    const onDeleteClick = (position: number) => {
+        setIngredients(prevState => {
+            return prevState.map((el, index) => {
+                if (position === index) {
+                    return {...el, count: el.count - 1};
+                } else {
+                    return {...el};
+                }
+            });
+        });
+    };
 
     return (
         <div className={'container'}>
