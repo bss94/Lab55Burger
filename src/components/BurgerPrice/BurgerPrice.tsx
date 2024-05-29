@@ -1,10 +1,10 @@
 import React from 'react';
-import {IngredientsList} from '../../App.tsx';
+import {IngredientsState} from '../../App.tsx';
 import INGREDIENTS from '../../lib/Ingredients.ts';
 
 
 interface Props {
-    ingredients: IngredientsList[];
+    ingredients: IngredientsState[];
 }
 const BurgerPrice:React.FC<Props> = ({ingredients}) => {
     const price = () =>{

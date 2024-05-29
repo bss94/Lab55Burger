@@ -1,6 +1,23 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.pic {
+    height: 50px;
+    width: 50px;
+}
+
+.delete-btn {
+    visibility: hidden;
+    background-color: #ee6666;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.visible {
+    visibility: visible;
 }
