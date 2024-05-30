@@ -24,7 +24,7 @@ const IngredientsItem: React.FC<Props> = ({
             <img alt={'not found'} className={'pic'} src={ingredientItem[0].image}
                  onClick={ingredientClick}/>
             <p>{ingredient.name}</p>
-            <h3>{ingredient.count}</h3>
+            <h3>x{ingredient.count}</h3>
             <button className={buttonClass.join(' ')} onClick={onDelete}>-</button>
         </div>
     );

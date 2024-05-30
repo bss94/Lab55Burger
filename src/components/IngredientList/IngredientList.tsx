@@ -13,11 +13,11 @@ const IngredientList: React.FC<Props> = ({ingredients, ingredientClick, onDelete
         <div className={'ingredients-list'}>
             {ingredients.map((item, index) => {
                 return <IngredientsItem ingredient={item}
-                                        ingredientClick={()=>ingredientClick(index)}
-                                        onDelete={()=>onDelete(index)}
+                                        ingredientClick={() => ingredientClick(index)}
+                                        onDelete={() => onDelete(index)}
                                         key={String((index + 1) * 15) + item.name}/>;
             })}
-
+            <button className={'clear-btn'}>Clear All</button>
         </div>
     );
 };

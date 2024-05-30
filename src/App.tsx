@@ -44,6 +44,7 @@ const App = () => {
         <div className={'container'}>
             <IngredientList ingredients={ingredients} ingredientClick={onIngredientClick} onDelete={onDeleteClick}/>
             <BurgerContainer ingredients={ingredients}/>
+
         </div>
     );
 };
