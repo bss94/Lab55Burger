@@ -51,9 +51,21 @@
     justify-content: space-between;
     padding: 5px;
 }
+.ingredient{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+.ingredient:hover{
+    border-color: #ffffff;
+    color: #535bf2;
+}
 
 .list-item p {
     width: 60px;
+    margin-left: 60px;
+    text-align: start;
 }
 
 .list-item h3 {
@@ -72,7 +84,7 @@
 .clear-btn {
     background-color: rgb(6, 110, 253);
     color: white;
-    margin-top: 15px;
+ margin-top: 15px;
 }
 
 .visible {
