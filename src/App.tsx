@@ -39,10 +39,26 @@ const App = () => {
             });
         });
     };
+    const onClearClick = () => {
+        setIngredients(prevState => {
+            return prevState.map((el) => {
+                if (el.count > 0) {
+                    return {...el, count: 0};
+                } else {
+                    return {...el};
+                }
+            });
+        });
+    };
 
     return (
         <div className={'container'}>
-            <IngredientList ingredients={ingredients} ingredientClick={onIngredientClick} onDelete={onDeleteClick}/>
+            <IngredientList
+                ingredients={ingredients}
+                ingredientClick={onIngredientClick}
+                onDelete={onDeleteClick}
+                onClear={onClearClick}
+            />
             <BurgerContainer ingredients={ingredients}/>
 
         </div>

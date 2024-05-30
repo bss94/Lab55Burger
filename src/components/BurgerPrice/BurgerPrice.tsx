@@ -6,13 +6,14 @@ import INGREDIENTS from '../../lib/Ingredients.ts';
 interface Props {
     ingredients: IngredientsState[];
 }
-const BurgerPrice:React.FC<Props> = ({ingredients}) => {
-    const price = () =>{
-        return ingredients.reduce((acc, rec)=>{
-            const ingredient = INGREDIENTS.filter((el)=>el.name === rec.name)
+
+const BurgerPrice: React.FC<Props> = ({ingredients}) => {
+    const price = () => {
+        return ingredients.reduce((acc, rec) => {
+            const ingredient = INGREDIENTS.filter((el) => el.name === rec.name);
             return acc + ingredient[0].price * rec.count;
-        },30)
-    }
+        }, 30);
+    };
     return (
         <div>
             <p>Price: {price()}</p>

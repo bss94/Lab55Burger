@@ -9,7 +9,7 @@ interface Props {
 }
 
 const BurgerContainer: React.FC<Props> = ({ingredients}) => {
-    const burgerIngredients= [...ingredients]
+    const burgerIngredients = [...ingredients];
     return (
 
         <div className={'burger-cont'}>
@@ -18,12 +18,13 @@ const BurgerContainer: React.FC<Props> = ({ingredients}) => {
                     <div className="Seeds1"></div>
                     <div className="Seeds2"></div>
                 </div>
-                {burgerIngredients.reverse().map((item,index) => {
-                    if(item.count>0){
-                        return <BurgerIngredient name={item.name} count={item.count} key={String(index + 24)+item.name}/>
-                    }})
+                {burgerIngredients.reverse().map((item, index) => {
+                    if (item.count > 0) {
+                        return <BurgerIngredient name={item.name} count={item.count}
+                                                 key={String(index + 24) + item.name}/>;
                     }
-
+                })
+                }
                 <div className="BreadBottom"></div>
             </div>
             <BurgerPrice ingredients={ingredients}/>

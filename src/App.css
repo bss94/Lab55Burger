@@ -9,13 +9,15 @@
     height: 60px;
     width: 60px;
 }
-.container{
+
+.container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.ingredients-list, .burger-cont{
+
+.ingredients-list, .burger-cont {
     width: 50%;
     min-height: 408px;
     box-sizing: border-box;
@@ -24,7 +26,8 @@
     margin: 10px;
     position: relative;
 }
-.ingredients-list:before{
+
+.ingredients-list:before {
     content: 'Ingredients';
     position: absolute;
     left: 13px;
@@ -32,7 +35,8 @@
     background-color: #fff;
     padding: 8px;
 }
-.burger-cont:before{
+
+.burger-cont:before {
     content: 'Burger';
     position: absolute;
     left: 13px;
@@ -40,18 +44,22 @@
     background-color: #fff;
     padding: 8px;
 }
-.list-item{
+
+.list-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
 }
-.list-item p{
+
+.list-item p {
     width: 60px;
 }
-.list-item h3{
+
+.list-item h3 {
     width: 34px;
 }
+
 .delete-btn {
     visibility: hidden;
     background-color: #ee6666;
@@ -60,7 +68,8 @@
     width: 30px;
     padding: 0.3em 0.6em;
 }
-.clear-btn{
+
+.clear-btn {
     background-color: rgb(6, 110, 253);
     color: white;
     margin-top: 15px;
